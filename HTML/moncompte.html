@@ -20,11 +20,11 @@
                 <form>
                 <input type="text" name="email" placeholder="email">
                 <input type="text" name="mdp" placeholder="mot de passe">
-                </form>            
+                </form>
                 </div>
             <div class="son">
                 <img class="ic" src="image/speaker.png">
-            
+
             </div>
             <div class="commande">
                 <p> Ma commande</p>
@@ -41,7 +41,42 @@
                 <li> <a href="Collaborateur.html" class="lien">Nos collaborateurs</a></li>
             </ul>
                 </div>
-                 <div class="map"></div>
+                 <div class="minimap">
+                <div id="minimap" style="width:200px;height:200px">
+                </div>
+                <script>
+      function initMap() {
+        var uluru = {lat: 48.048, lng: -1.742 };
+        var pos2 = {lat: 48.0477, lng: -1.741};
+        var pos3 ={ lat: 48.044, lng: -1.750};
+        var pos4 ={lat: 48.045, lng: -1.743};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 15,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+          var marker = new google.maps.Marker({
+          position: pos2,
+          map: map
+        });
+          var marker = new google.maps.Marker({
+          position: pos3,
+          map: map
+        });
+          var marker = new google.maps.Marker({
+          position: pos4,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhM7nor4_Py1uYMa6NDzydwnekR2GHSf0&callback=initMap">
+    </script>
+
+            </div>
             </nav>
         <section>
             <h3>Commande précédente</h3>
@@ -51,7 +86,7 @@
                 <img src="" alt="">
                 <p>04/05/06</p>
                 <div class="pirx_compte"><p>5.50€</p></div>
-                
+
             </div>
             <div class="ancien_co">
                 <img src="" alt="">
