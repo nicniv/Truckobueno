@@ -1,0 +1,60 @@
+
+
+body {
+  margin: 0;
+  background-image: url("../image/fond.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title {
+  text-align: center;
+}
+
+.topbar {
+  background-color: rgb(242, 48, 30);
+  height: 61px;
+}
+
+.topbar > div {
+  display: inline-block;
+}
+
+.menu-droite {
+  float: right;
+}
+.iconinsc{
+  position: absolute;
+}
+.connexioninsc {
+  position: absolute;
+  left: 300px;
+  top: 15px;
+  width: 40px;
+}
+.iconconnex{
+  position: absolute;
+  left: 50px;
+}
+
+.connexionconnex{
+  position: absolute;
+  left: 500px;
+  top: 15px;
+  width: 40px;
+}
+
+.icon {
+  position: relative;
+  top: 15px;
+  width: 40px;
+}
+
+.iconspeaker {
+  position: relative;
+}
+
+form {
+  display: inline-block;
+}
