@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Truck O Bueno</title>
+        <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+        <link href="CSS/Truck_o_bueno.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="fond"></div>
+        <header class="topbar">
+            <div class="reseaux">
+                <a href="https://www.facebook.com/"><img class="ic" src="image/facebook.png"></a>
+                <a href="https://www.twitter.com"><img class="ic" src="image/twitter2.png"></a>
+                <a href="https://www.instagram.com"><img class="ic" src="image/icons8-instagram-50.png"></a>
+                <a href="" class="icres" src="image/icons8-shopping-cart-50.png"></a>
+            </div>
+            <div class="connexion">
+                <a href=""><img class="ic" src="image/inscription.png">S'inscrire</a>
+                <a href="moncompte.html"><img src="image/connexion.png">Se connecter</a>
+                <form>
+                    <input type="text" name="email" placeholder="email">
+                    <input type="text" name="mdp" placeholder="mot de passe">
+                </form>            
+            </div>
+            <div class="son">
+                <img class="ic" src="image/speaker.png">
+
+            </div>
+            <div class="commande">
+                <p> Ma commande</p>
+                <a href="Commande.html" class="ic"><img src="image/shopping%20cart.png"></a>
+            </div>
+            <a href="Truck_o_bueno.html"><h1>Truck 'O' Bueno</h1></a>
+        </header>
+        <nav>
+            <div class="lien_menu">
+                <ul>
+                    <li> <a href="Evenements.html" class="lien">Evenements a venir</a>   </li>
+                    <li> <a href="Menu.html" class="lien">Notre carte</a> </li>
+                    <li> <a href="Map.html" class="lien">Nous trouver</a> </li>
+                    <li> <a href="Collaborateur.html" class="lien">Nos collaborateurs</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section>
+            <div class="grandemap">
+                <div id="map" style="width:400px;height:400px">
+                </div>
+                <script>
+                    function initMap() {
+                        var uluru = {lat: 48.048, lng: -1.742 };
+                        var pos2 = {lat: 48.0477, lng: -1.741};
+                        var pos3 ={ lat: 48.044, lng: -1.750};
+                        var pos4 ={lat: 48.045, lng: -1.743};
+                        var map = new google.maps.Map(document.getElementById('map'), {
+                            zoom: 15,
+                            center: uluru
+                        });
+                        var marker = new google.maps.Marker({
+                            position: uluru,
+                            map: map
+                        });
+                        var marker = new google.maps.Marker({
+                            position: pos2,
+                            map: map
+                        });
+                        var marker = new google.maps.Marker({
+                            position: pos3,
+                            map: map
+                        });
+                        var marker = new google.maps.Marker({
+                            position: pos4,
+                            map: map
+                        });
+                    }
+                </script>
+                <script async defer
+                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhM7nor4_Py1uYMa6NDzydwnekR2GHSf0&callback=initMap">
+                </script>
+
+            </div>
+
+        </section>
+    </body>
+
+</html>

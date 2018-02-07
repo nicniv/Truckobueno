@@ -1,3 +1,64 @@
-topbar {
-  color:rgb(215, 199, 18)
+
+
+body {
+  margin: 0;
+  background-image: url("../image/fond.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.title { /* truck o bueno au milieu */
+  text-align: center;
+  text-decoration: none;
+  color: white;
+
+}
+
+.topbar {
+  background-color: rgb(242, 48, 30);
+  height: 61px;
+}
+.topbar > div { /* aligne elements topbar */
+  display: inline-block;
+}
+
+.connexioninsc {
+  margin-left: 100px;
+}
+
+.menu-droite { /* volume + commande + icone caddie */
+  float: right;
+}
+
+.iconcomm { /* icone caddie position */
+  position: relative;
+  top: 15px;
+  width: 40px;
+}
+
+.iconspeaker {
+  position: relative;
+}
+
+form {
+  display: inline-block;
+}
+
+.sidebar > ul > li { /* menu gauche*/
+  width: 155px;
+  background-color: rgb(230, 231, 59);
+  border: 1px solid rgb(230, 231, 59);
+  border-radius: 40px;
+  color: white;
+  list-style-type: none;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sidebar > ul > li > a { /* liens sidebar */
+  color: black;
+  text-decoration: none;
 }
