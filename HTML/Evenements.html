@@ -1,150 +1,109 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Truck O Bueno</title>
-        <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-        <link href="CSS/Truck_o_bueno.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="fond"></div>
-        <header class="topbar">
-            <div class="reseaux">
-                <a href="https://www.facebook.com/"><img class="ic" src="../image/facebook.png"></a>
-                <a href="https://www.twitter.com"><img class="ic" src="../image/twitter2.png"></a>
-                <a href="https://www.instagram.com"><img class="ic" src="../image/instagram.png"></a>
-                <a href="" class="icres" src="../image/shoppingcart.png"></a>
-            </div>
-            <div class="connexion">
-                <a href=""><img class="ic" src="../image/inscription.png">S'inscrire</a>
-                <a href="moncompte.html"><img src="../image/connexion.png">Se connecter</a>
-                <form>
-<<<<<<< HEAD
-                <input type="text" name="email" placeholder="email">
-                <input type="text" name="mdp" placeholder="mot de passe">
-                </form>
-                </div>
-            <div class="son">
-                <img class="ic" src="image/speaker.png">
-=======
-                    <input type="text" name="email" placeholder="email">
-                    <input type="text" name="mdp" placeholder="mot de passe">
-                </form>
-            </div>
-            <div class="son">
-                <img class="ic" src="../image/speaker.png">
->>>>>>> 0ae5afa88456ec6488bf22b1d88431acaa2bdc01
 
-            </div>
-            <div class="commande">
-                <p> Ma commande</p>
-                <a href="Commande.html" class="ic"><img src="../image/shoppingcart.png"> </a>
-            </div>
-            <a href="index.html"><h1>Truck 'O' Bueno</h1></a>
-        </header>
-        <nav>
-            <div class="lien_menu">
-                <ul>
-                    <li> <a href="Evenements.html" class="lien">Evenements a venir</a>   </li>
-                    <li> <a href="Menu.html" class="lien">Notre carte</a> </li>
-                    <li> <a href="Map.html" class="lien">Nous trouver</a> </li>
-                    <li> <a href="Collaborateur.html" class="lien">Nos collaborateurs</a></li>
-                </ul>
-            </div>
-            <div class="minimap">
-                <div id="minimap" style="width:200px;height:200px">
-                </div>
-<<<<<<< HEAD
-                 <div class="minimap">
-                <div id="minimap" style="width:200px;height:200px">
-                </div>
-                <script>
-      function initMap() {
-        var uluru = {lat: 48.048, lng: -1.742 };
-        var pos2 = {lat: 48.0477, lng: -1.741};
-        var pos3 ={ lat: 48.044, lng: -1.750};
-        var pos4 ={lat: 48.045, lng: -1.743};
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 15,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
+<head>
+  <title>Truck O Bueno</title>
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+  <link href="CSS/Truck_o_bueno.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="fond"></div>
+  <header class="topbar">
+    <div class="reseaux">
+      <a href="https://www.facebook.com/"><img class="ic" src="../image/facebook.png"></a>
+      <a href="https://www.twitter.com"><img class="ic" src="../image/twitter2.png"></a>
+      <a href="https://www.instagram.com"><img class="ic" src="../image/instagram.png"></a>
+      <a href="" class="icres" src="../image/shoppingcart.png"></a>
+    </div>
+    <div class="connexion">
+      <a href=""><img class="ic" src="../image/inscription.png">S'inscrire</a>
+      <a href="moncompte.html"><img src="../image/connexion.png">Se connecter</a>
+      <form>
+        <input type="text" name="email" placeholder="email">
+        <input type="text" name="mdp" placeholder="mot de passe">
+      </form>
+    </div>
+    <div class="son">
+      <img class="ic" src="../image/speaker.png">
+
+    </div>
+    <div class="commande">
+      <p> Ma commande</p>
+      <a href="Commande.html" class="ic"><img src="../image/shoppingcart.png"> </a>
+    </div>
+    <a href="index.html"><h1>Truck 'O' Bueno</h1></a>
+  </header>
+  <nav>
+    <div class="lien_menu">
+      <ul>
+        <li> <a href="Evenements.html" class="lien">Evenements a venir</a> </li>
+        <li> <a href="Menu.html" class="lien">Notre carte</a> </li>
+        <li> <a href="Map.html" class="lien">Nous trouver</a> </li>
+        <li> <a href="Collaborateur.html" class="lien">Nos collaborateurs</a></li>
+      </ul>
+    </div>
+    <div class="minimap">
+      <div id="minimap" style="width:200px;height:200px">
+      </div>
+      <script>
+        function initMap() {
+          var uluru = {
+            lat: 48.048,
+            lng: -1.742
+          };
+          var pos2 = {
+            lat: 48.0477,
+            lng: -1.741
+          };
+          var pos3 = {
+            lat: 48.044,
+            lng: -1.750
+          };
+          var pos4 = {
+            lat: 48.045,
+            lng: -1.743
+          };
+          var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: uluru
+          });
           var marker = new google.maps.Marker({
-          position: pos2,
-          map: map
-        });
+            position: uluru,
+            map: map
+          });
           var marker = new google.maps.Marker({
-          position: pos3,
-          map: map
-        });
+            position: pos2,
+            map: map
+          });
           var marker = new google.maps.Marker({
-          position: pos4,
-          map: map
-        });
-      }
-    </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhM7nor4_Py1uYMa6NDzydwnekR2GHSf0&callback=initMap">
-    </script>
-
-            </div>
-            </nav>
-=======
-                <script>
-                    function initMap() {
-                        var uluru = {lat: 48.048, lng: -1.742 };
-                        var pos2 = {lat: 48.0477, lng: -1.741};
-                        var pos3 ={ lat: 48.044, lng: -1.750};
-                        var pos4 ={lat: 48.045, lng: -1.743};
-                        var map = new google.maps.Map(document.getElementById('map'), {
-                            zoom: 15,
-                            center: uluru
-                        });
-                        var marker = new google.maps.Marker({
-                            position: uluru,
-                            map: map
-                        });
-                        var marker = new google.maps.Marker({
-                            position: pos2,
-                            map: map
-                        });
-                        var marker = new google.maps.Marker({
-                            position: pos3,
-                            map: map
-                        });
-                        var marker = new google.maps.Marker({
-                            position: pos4,
-                            map: map
-                        });
-                    }
-                </script>
-                <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhM7nor4_Py1uYMa6NDzydwnekR2GHSf0&callback=initMap">
-                </script></div>
-        </nav>
->>>>>>> 0ae5afa88456ec6488bf22b1d88431acaa2bdc01
-        <section>
-            <a href="http://www.hellfest.fr/"><img src="/image/hellfest.jpg" alt="image de la foule helfest"></a>
-            <p>Le Hellfest, également appelé Hellfest Summer Open Air, est un festival de musique français spécialisé dans les musiques extrêmes, annuellement organisé au mois de juin à Clisson en Loire-Atlantique. Sa forte fréquentation le fait figurer parmi les plus importants festivals de musique français. Il est aussi l'un des plus grands festivals de metal en Europe et le premier en France.</p>
-            <a href="https://www.lestrans.com/"><img src="/image/vc.jpg" alt="affiche trans musicales"></a>
-            <p>Les Rencontres trans musicales de Rennes sont un festival international de musiques actuelles qui se tient tous les ans début décembre à Rennes et qui s'étire sur 3 à 5 jours suivant les années. En 2012, le festival a rassemblé plus de 60 000 personnes et a comptabilisé environ 32 000 entrées payantes1.</p>
-            <a href="http://www.vieillescharrues.asso.fr/2018/"><img src="/image/vclogo.png" alt="logo vielle charrues"></a>
-            <p>Le festival des Vieilles Charrues (Gouel an Erer Kozh en breton) est un festival de musique accueillant des artistes de divers horizons. Ce festival annuel dure quatre jours et débute à la mi-juillet dans la commune de Carhaix-Plouguer, dans le Centre Finistère, en Bretagne.
-
-<<<<<<< HEAD
-            Il a été créé en 1992 dans la commune voisine de Landeleau et a pour but de mélanger les genres et être accessible à tout public. Il est rapidement devenu le plus grand festival de musique français pour ce qui est de la fréquentation1, entraînant un public attiré par l'affiche éclectique et l'esprit festif et convivial. Le record de fréquentation date de 2017, avec 280 000 festivaliers sur quatre jours, dont 222 000 entrées payantes et 6 800 bénévoles.</p>
-        </section>
+            position: pos3,
+            map: map
+          });
+          var marker = new google.maps.Marker({
+            position: pos4,
+            map: map
+          });
+        }
+      </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhM7nor4_Py1uYMa6NDzydwnekR2GHSf0&callback=initMap">
+      </script>
+    </div>
+  </nav>
+  <section>
+    <a href="http://www.hellfest.fr/"><img src="/image/hellfest.jpg" alt="image de la foule helfest"></a>
+    <p>Le Hellfest, également appelé Hellfest Summer Open Air, est un festival de musique français spécialisé dans les musiques extrêmes, annuellement organisé au mois de juin à Clisson en Loire-Atlantique. Sa forte fréquentation le fait figurer parmi les
+      plus importants festivals de musique français. Il est aussi l'un des plus grands festivals de metal en Europe et le premier en France.</p>
+    <a href="https://www.lestrans.com/"><img src="/image/vc.jpg" alt="affiche trans musicales"></a>
+    <p>Les Rencontres trans musicales de Rennes sont un festival international de musiques actuelles qui se tient tous les ans début décembre à Rennes et qui s'étire sur 3 à 5 jours suivant les années. En 2012, le festival a rassemblé plus de 60 000 personnes
+      et a comptabilisé environ 32 000 entrées payantes1.</p>
+    <a href="http://www.vieillescharrues.asso.fr/2018/"><img src="/image/vclogo.png" alt="logo vielle charrues"></a>
+    <p>Le festival des Vieilles Charrues (Gouel an Erer Kozh en breton) est un festival de musique accueillant des artistes de divers horizons. Ce festival annuel dure quatre jours et débute à la mi-juillet dans la commune de Carhaix-Plouguer, dans le Centre
+      Finistère, en Bretagne. Il a été créé en 1992 dans la commune voisine de Landeleau et a pour but de mélanger les genres et être accessible à tout public. Il est rapidement devenu le plus grand festival de musique français pour ce qui est de la fréquentation1,
+      entraînant un public attiré par l'affiche éclectique et l'esprit festif et convivial. Le record de fréquentation date de 2017, avec 280 000 festivaliers sur quatre jours, dont 222 000 entrées payantes et 6 800 bénévoles.</p>
+  </section>
 
 
-        </body>
+</body>
+
 </html>
-=======
-                Il a été créé en 1992 dans la commune voisine de Landeleau et a pour but de mélanger les genres et être accessible à tout public. Il est rapidement devenu le plus grand festival de musique français pour ce qui est de la fréquentation1, entraînant un public attiré par l'affiche éclectique et l'esprit festif et convivial. Le record de fréquentation date de 2017, avec 280 000 festivaliers sur quatre jours, dont 222 000 entrées payantes et 6 800 bénévoles.</p>
-        </section>
-
-
-    </body>
-</html>
->>>>>>> 0ae5afa88456ec6488bf22b1d88431acaa2bdc01
