@@ -24,27 +24,14 @@ body {
 }
 
 .connexioninsc {
-  /* position: absolute
-  left: 300px;
-  top: 15px;
-  width: 40px; */
-  margin-left: 53px;
+  margin-left: 100px;
 }
-.iconinsc {  /* icone inscription*/
 
-}
-.connexionconnex{
-  left: 500px;
-  top: 15px;
-}
-.iconconnex{
-  position: relative;
-}
-.menu-droite {
+.menu-droite { /* volume + commande + icone caddie */
   float: right;
 }
 
-.iconcomm {
+.iconcomm { /* icone caddie position */
   position: relative;
   top: 15px;
   width: 40px;
@@ -58,20 +45,20 @@ form {
   display: inline-block;
 }
 
-.sidebar > ul > li {
+.sidebar > ul > li { /* menu gauche*/
   width: 155px;
- background-color: rgb(230, 231, 59);
- border: 1px solid rgb(230, 231, 59);
- border-radius: 40px;
- color: white;
- list-style-type: none;
- margin: 10px;
- padding: 5px;
- text-align: center;
- cursor: pointer;
+  background-color: rgb(230, 231, 59);
+  border: 1px solid rgb(230, 231, 59);
+  border-radius: 40px;
+  color: white;
+  list-style-type: none;
+  margin: 10px;
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
 }
 
-.sidebar > ul > li > a {
+.sidebar > ul > li > a { /* liens sidebar */
   color: black;
   text-decoration: none;
 }
