@@ -10,6 +10,9 @@ body {
 
 .title { /* truck o bueno au milieu */
   text-align: center;
+  text-decoration: none;
+  color: white;
+
 }
 
 .topbar {
@@ -21,35 +24,25 @@ body {
 }
 
 .connexioninsc {
-  position: absolute;
+  /* position: absolute
   left: 300px;
   top: 15px;
-  width: 40px;
+  width: 40px; */
+  margin-left: 53px;
 }
 .iconinsc {  /* icone inscription*/
-  position: relative;
-  left 30px;
+
 }
 .connexionconnex{
-  position: absolute;
   left: 500px;
   top: 15px;
-  width: 40px;
 }
 .iconconnex{
-  position: absolute;
-  left: -160px;
+  position: relative;
 }
 .menu-droite {
   float: right;
 }
-
-input {
-  position: absolute;
-  top: 20px;
-  left: 100px;
-}
-
 
 .iconcomm {
   position: relative;
@@ -63,4 +56,22 @@ input {
 
 form {
   display: inline-block;
+}
+
+.sidebar > ul > li {
+  width: 155px;
+ background-color: rgb(230, 231, 59);
+ border: 1px solid rgb(230, 231, 59);
+ border-radius: 40px;
+ color: white;
+ list-style-type: none;
+ margin: 10px;
+ padding: 5px;
+ text-align: center;
+ cursor: pointer;
+}
+
+.sidebar > ul > li > a {
+  color: black;
+  text-decoration: none;
 }
