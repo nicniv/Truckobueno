@@ -14,7 +14,6 @@ body {
   color: white;
 
 }
-
 .topbar {
   background-color: rgb(242, 48, 30);
   height: 61px;
@@ -47,7 +46,8 @@ form {
 
 .sidebar > ul > li { /* menu gauche*/
   width: 155px;
-  background-color: rgb(230, 231, 59);
+  font-family: sans-serif;
+  background-color: rgb(237, 214, 14);
   border: 1px solid rgb(230, 231, 59);
   border-radius: 40px;
   color: white;
@@ -61,4 +61,39 @@ form {
 .sidebar > ul > li > a { /* liens sidebar */
   color: black;
   text-decoration: none;
+}
+
+.commande {
+  font-family: sans-serif;
+}
+
+.lieninscription {
+  width: 155px;
+  font-family: sans-serif;
+  background-color:rgb(230, 231, 59);
+  border-radius: 40px;
+}
+
+@@keyframes slider {
+  0% {left: 0%;}
+  20% {left: 0%;}
+  25% {left: -100%;}
+  45% {left: -100%;}
+  50% {left -200%;}
+  70% {left: -200%}
+  75% {left: -300%;}
+  95% {left: -300%;}
+  100% {left: -400%;}
+
+
+}
+div#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 5s slider infinite;
 }
