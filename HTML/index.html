@@ -20,7 +20,7 @@
 		</div>
 		<div class="connexioninsc">
 			<!-- input field inscription icone + input field -->
-			<a href="inscription.html"><img class="iconinsc" src="../image/inscription.png">S'inscrire</a>
+			<a class="lieninscription" href="inscription.html"><img src="../image/inscription.png">S'inscrire</a>
 		</div>
 		<div class="connexionconnex">
 			<!-- input field connexion icone + input field -->
@@ -36,7 +36,7 @@
 				<img class="iconspeaker" src="../image/speaker.png" height="20px" width="20px">
 			</span>
 			<span class="commande">
-				<span>Ma commande</span>
+				<span>Ma commande </span>
 			<a href="Commande.html" class="iconcomm">
 					<img src="../image/shoppingcart.png">
 				</a>
@@ -44,7 +44,7 @@
 		</div>
 	</header>
 	<div class="title">
-	<a href="index.html">
+		<a href="index.html">
 			<h1>Truck 'O' Bueno</h1></a>
 	</div>
 	<nav>
@@ -66,40 +66,52 @@
 			</figure>
 		</div>
 		<div class="minimap">
-                <div id="minimap" style="width:200px;height:200px">
-                </div>
-                <script>
-                    function initMap() {
-                        var uluru = {lat: 48.048, lng: -1.742 };
-                        var pos2 = {lat: 48.0477, lng: -1.741};
-                        var pos3 ={ lat: 48.044, lng: -1.750};
-                        var pos4 ={lat: 48.045, lng: -1.743};
-                        var map = new google.maps.Map(document.getElementById('minimap'), {
-                            zoom: 14,
-                            center: uluru
-                        });
-                        var marker = new google.maps.Marker({
-                            position: uluru,
-                            map: map
-                        });
-                        var marker = new google.maps.Marker({
-                            position: pos2,
-                            map: map
-                        });
-                        var marker = new google.maps.Marker({
-                            position: pos3,
-                            map: map
-                        });
-                        var marker = new google.maps.Marker({
-                            position: pos4,
-                            map: map
-                        });
-                    }
-                </script>
-                <script async defer
-                        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxbvP2vNfL2nBrOWaRBAZNIB49DgofKc4&callback=initMap">
-                </script></div>
-		
+			<div id="minimap" width="200px" height="200px">
+			</div>
+			<script>
+				function initMap() {
+					var uluru = {
+						lat: 48.048,
+						lng: -1.742
+					};
+					var pos2 = {
+						lat: 48.0477,
+						lng: -1.741
+					};
+					var pos3 = {
+						lat: 48.044,
+						lng: -1.750
+					};
+					var pos4 = {
+						lat: 48.045,
+						lng: -1.743
+					};
+					var map = new google.maps.Map(document.getElementById('minimap'), {
+						zoom: 14,
+						center: uluru
+					});
+					var marker = new google.maps.Marker({
+						position: uluru,
+						map: map
+					});
+					var marker = new google.maps.Marker({
+						position: pos2,
+						map: map
+					});
+					var marker = new google.maps.Marker({
+						position: pos3,
+						map: map
+					});
+					var marker = new google.maps.Marker({
+						position: pos4,
+						map: map
+					});
+				}
+			</script>
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxbvP2vNfL2nBrOWaRBAZNIB49DgofKc4&callback=initMap">
+			</script>
+		</div>
+
 		<div class="paragraph1">
 			<p>Qu'est ce que Truck O bueno ?</p>
 			<p>Truck O bueno est un foodtruck sur tous les festivals dans la région Ille-Et-vilaine et alentours.</p>
@@ -107,6 +119,62 @@
 			<p> Il vous suffit de vous rendre dans l'onglet "Nous trouver" pour avoir accès à notre localisation en temps réél . Il y a aussi le calendrier des évènement à venir vous restaurer entre 2 concerts !</p>
 		</div>
 	</section>
+
+	<div class="container">
+		<h2> Truck O Bueno </h2>
+		<div id="caroussel" class="carousselslider">
+			<ol class="refcaroussel">
+				<li class="photo1"></li>
+				<li class="photo2"></li>
+				<li class="photo3"></li>
+				<li class="photo4"></li>
+			</ol>
+			<div class="caroussel-in" role="listbox">
+				<div class="photo-active">
+					<img src="../image/empanadas1.png" width="700px" height="500px">
+					<div class="nom-caroussel"> </div>
+					<h3> Empanada Viande </h3>
+					<p>Le classique</p>
+				</div>
+
+				<div class="item">
+					<img src="../image/empanadas2.png" width="*700px" height="500px">
+					<div class="photo-active">
+						<h2> Empanada poisson </h2>
+						<p> Envie d'un peu d'air marin ?</p>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="../image/empanadas3.png" width="700px" height="500px">
+					<div class="photo-active">
+						<h3> Empanada Legumes </h3>
+						<p> Aux petits legumes </p>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="../image/empanadas4.png" width="700px" height="500px">
+					<div class="photo-active">
+						<h3> Empanada aleatoire </h3>
+						<p> Need un remplissage aleatoire </p>
+					</div>
+				</div>
+			</div>
+
+			<a class="left-arrow-control" href="#caroussel" role="button">
+			<span class="glyphicon-chevron-left" aria-hidden="true"> </span>
+			<span class="sr-only">Image précédente</span>
+		</a>
+
+			<a class="right-arrow-control" href="#caroussel" role="button">
+			<span class="glyphicon-chevron-right" aria-hidden="true"> </span>
+			<span class="sr-only">Image suivante</span>
+		</a>
+		</div>
+	</div>
+
+
 
 </body>
 
