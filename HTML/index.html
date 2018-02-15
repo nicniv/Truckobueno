@@ -5,6 +5,8 @@
 	<title>Truck O Bueno - Accueil</title>
 	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
 	<link href="../CSS/style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -58,13 +60,13 @@
 			</ul>
 		</div>
 	</nav>
-	<section>
-		<div class="carrousel">
+	<!-- <div class="photos">
 			<figure>
 				<img src="../image/allee.jpeg" height="500px" width="700px">
 				<img src="../image/femme.jpeg" height="500px" width="700px">
 			</figure>
-		</div>
+		</div> -->
+	<section>
 		<div class="minimap">
 			<div id="minimap" width="200px" height="200px">
 			</div>
@@ -119,7 +121,6 @@
 			<p> Il vous suffit de vous rendre dans l'onglet "Nous trouver" pour avoir accès à notre localisation en temps réél . Il y a aussi le calendrier des évènement à venir vous restaurer entre 2 concerts !</p>
 		</div>
 	</section>
-
 	<div class="container">
 		<h2> Truck O Bueno </h2>
 		<div id="caroussel" class="carousselslider">
@@ -172,7 +173,36 @@
 			<span class="sr-only">Image suivante</span>
 		</a>
 		</div>
+		<script>
+			$(document).ready(function() {
+				// Activate Carousel
+				$("#myCarousel").carousel();
+
+				// Enable Carousel Indicators
+				$(".photo1").click(function() {
+					$("#myCarousel").carousel(0);
+				});
+				$(".photo2").click(function() {
+					$("#myCarousel").carousel(1);
+				});
+				$(".photo3").click(function() {
+					$("#myCarousel").carousel(2);
+				});
+				$(".photo4").click(function() {
+					$("#myCarousel").carousel(3);
+				});
+
+				// Enable Carousel Controls
+				$(".left").click(function() {
+					$("#myCarousel").carousel("prev");
+				});
+				$(".right").click(function() {
+					$("#myCarousel").carousel("next");
+				});
+			});
+		</script>
 	</div>
+
 
 
 
