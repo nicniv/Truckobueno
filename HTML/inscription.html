@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Truck O Bueno</title>
-        <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
-        <link href="CSS/Truck_o_bueno.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="fond"></div>
-        <header class="topbar">
-            <div class="reseaux">
-                <a href="https://www.facebook.com/"><img class="ic" src="../image/facebook.png"></a>
-                <a href="https://www.twitter.com"><img class="ic" src="../image/twitter2.png"></a>
-                <a href="https://www.instagram.com"><img class="ic" src="../image/instagram.png"></a>
-                <a href="" class="icres" src="../image/shoppingcart.png"></a>
-            </div>
-            <div class="connexion">
-                <a href="inscription.html"><img class="ic" src="../image/inscription.png">S'inscrire</a>
-                <a href="moncompte.html"><img src="../image/connexion.png">Se connecter</a>
-                <form>
-                    <input type="text" name="email" placeholder="email">
-                    <input type="text" name="mdp" placeholder="mot de passe">
-                </form>
-            </div>
-            <div class="son">
-                <img class="ic" src="../image/speaker.png">
 
-            </div>
-            <div class="commande">
-                <p> Ma commande</p>
-                <a href="Commande.html" class="ic"><img src="../image/shoppingcart.png"> </a>
-            </div>
-            <a href="index.html"><h1>Truck 'O' Bueno</h1></a>
-        </header>
-        <nav>
-            <div class="lien_menu">
-                <ul>
-                    <li> <a href="Evenements.html" class="lien">Evenements a venir</a>   </li>
-                    <li> <a href="Menu.html" class="lien">Notre carte</a> </li>
-                    <li> <a href="Map.html" class="lien">Nous trouver</a> </li>
-                    <li> <a href="Collaborateur.html" class="lien">Nos collaborateurs</a></li>
-                </ul>
-            </div>
+<head>
+	<title>Truck O Bueno - Accueil</title>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<link href="../CSS/style.css" rel="stylesheet">
+</head>
+
+<body>
+	<header class="topbar">
+		<div class="reseaux">
+			<!-- icon rsx = reseaux sociaux -->
+			<a href="https://www.facebook.com/"><img class="iconrsx" src="../image/facebook.png"></a>
+			<a href="https://www.twitter.com"><img class="iconrsx" src="../image/twitter2.png"></a>
+			<a href="https://www.instagram.com"><img class="iconrsx" src="../image/instagram.png"></a>
+
+			<!--icone caddie -->
+			<a href="" class="icres" src="../image/shoppingcart.png"></a>
+		</div>
+		<div class="connexioninsc">
+			<!-- input field inscription icone + input field -->
+			<a href="inscription.html"><img class="iconinsc" src="../image/inscription.png">S'inscrire</a>
+		</div>
+		<div class="connexionconnex">
+			<!-- input field connexion icone + input field -->
+			<a href="moncompte.html"><img class="iconconnex" src="../image/connexion.png">Se connecter</a>
+			<form>
+				<input type="text" name="email" placeholder="email">
+				<input type="password" name="mdp" placeholder="mot de passe">
+				<input type="submit" value="Valider">
+			</form>
+		</div>
+		<div class="menu-droite">
+			<span class="iconeson">
+				<img class="iconspeaker" src="../image/speaker.png" height="20px" width="20px">
+			</span>
+			<span class="commande">
+				<span>Ma commande</span>
+			<a href="Commande.html" class="iconcomm">
+					<img src="../image/shoppingcart.png">
+				</a>
+			</span>
+		</div>
+	</header>
+	<div class="title">
+	<a href="index.html">
+			<h1>Truck 'O' Bueno</h1></a>
+	</div>
+	<nav>
+		<div class="sidebar">
+			<!-- liens vers autres pages -->
+			<ul>
+				<li> <a href="Evenements.html" class="lien">Evenements à venir</a> </li>
+				<li> <a href="Menu.html" class="lien">Notre carte</a> </li>
+				<li> <a href="Map.html" class="lien">Nous trouver</a> </li>
+				<li> <a href="Collaborateurs.html" class="lien">Nos collaborateurs</a></li>
+			</ul>
+		</div>
+	</nav>
+        <section>
             <div class="minimap">
                 <div id="minimap" style="width:200px;height:200px">
                 </div>
@@ -75,8 +93,6 @@
                 <script async defer
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxbvP2vNfL2nBrOWaRBAZNIB49DgofKc4&callback=initMap">
                 </script></div>
-        </nav>
-        <section>
             <div class="info">
                 <ul>
                     <li><p>Nom</p><form><input type="text" name="nom"></form>
