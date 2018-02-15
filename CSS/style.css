@@ -62,3 +62,16 @@ form {
   color: black;
   text-decoration: none;
 }
+
+.basindex{
+  position: relative;
+}
+.minimap{
+  position: absolute;
+  left: 20px;
+}
+
+.paragraph1{
+  position: absolute;
+  right:  20px
+}
