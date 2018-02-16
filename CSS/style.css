@@ -13,7 +13,9 @@ body {
   text-decoration: none;
   color: white;
 }
-
+.title > a {
+  text-decoration: none;
+}
 nav{
   display: inline-block;
 }
@@ -32,12 +34,10 @@ nav{
 .menu-droite { /* volume + commande + icone caddie */
   float: right;
 }
-.commande{
-}
+
 .iconcomm { /* icone caddie position */
-  position: relative;
-  top: 15px;
   width: 40px;
+  color: black;
 }
 
 .iconspeaker {
@@ -71,6 +71,7 @@ input {
 .sidebar > ul > li > a { /* liens sidebar */
   color: black;
   font-size: 16px;
+  text-decoration: none;
 }
 
 .basindex{
@@ -92,6 +93,7 @@ input {
   padding: 10px;
   text-align: center;
   cursor: pointer;
+  color: black;
 }
 .lien-connex{
   background-color: rgb(218, 211, 39);
@@ -100,6 +102,16 @@ input {
   padding: 10px;
   text-align: center;
   cursor: pointer;
+  color: black;
+}
+.commande{
+  background-color: rgb(218, 211, 39);
+  border: 1px solid rgb(218, 211, 39);
+  border-radius: 40px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: black!important;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -124,8 +136,12 @@ input {
 .paragraph1 {
   font-family: Verdana;
   text-align: center;
-  margin-right: 10px;
+  margin-left:  auto;
+  margin-right: auto;
   position: relative;
+  max-width: 750px;
+  margin-top: -300px;
+  font-size: 20px;
 }
 
 h1
@@ -142,4 +158,31 @@ h1
   text-align:center;
   display:block;
   margin:16px;
+  text-decoration:none;
+}
+
+.collab{
+  font-family: Verdana;
+  max-width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -500px;
+}
+
+.grandemap {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -150px;
+  max-width: 750px;
+}
+
+.articles {
+  margin-top: -475px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Verdana;
+}
+.article img {
+  max-width: 600px;
 }
