@@ -77,13 +77,13 @@ input {
   position: relative;
 }
 .minimap{
-  position: absolute;
-  left: 20px;
+  position: relative;
+  margin-left: 50px;
+  margin-top: 30px;
 }
 
 .paragraph1{
-  position: absolute;
-  right:  20px
+  position: relative;
 }
 .lieninscription {
   background-color: rgb(218, 211, 39);
@@ -118,7 +118,7 @@ input {
   width: calc(100% - 500px);
   position: relative;
   left: 300px;
-  top: -200px;
+  top: -450px;
 }
 
 .paragraph1 {

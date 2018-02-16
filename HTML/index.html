@@ -66,6 +66,53 @@
 			</ul>
 		</div>
 	</nav>
+	<div class="minimap">
+		<div id="minimap" style="width: 200px; height: 200px">
+		</div>
+		<script>
+			function initMap() {
+				var uluru = {
+					lat: 48.048,
+					lng: -1.742
+				};
+				var pos2 = {
+					lat: 48.0477,
+					lng: -1.741
+				};
+				var pos3 = {
+					lat: 48.044,
+					lng: -1.750
+				};
+				var pos4 = {
+					lat: 48.045,
+					lng: -1.743
+				};
+				var map = new google.maps.Map(document.getElementById('minimap'), {
+					zoom: 14,
+					center: uluru
+				});
+				var marker = new google.maps.Marker({
+					position: uluru,
+					map: map
+				});
+				var marker = new google.maps.Marker({
+					position: pos2,
+					map: map
+				});
+				var marker = new google.maps.Marker({
+					position: pos3,
+					map: map
+				});
+				var marker = new google.maps.Marker({
+					position: pos4,
+					map: map
+				});
+			}
+		</script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxbvP2vNfL2nBrOWaRBAZNIB49DgofKc4&callback=initMap">
+		</script>
+	</div>
+
 	<div class="caroussel-container">
 		<h2 class="caroussel-title">Nos produits</h2>
 		<div id="myCarousel" class="carousel slide">
@@ -125,59 +172,13 @@
 	</a>
 		</div>
 	</div>
-	
-		<div class="minimap">
-			<div id="minimap" width="200px" height="200px">
-			</div>
-			<script>
-				function initMap() {
-					var uluru = {
-						lat: 48.048,
-						lng: -1.742
-					};
-					var pos2 = {
-						lat: 48.0477,
-						lng: -1.741
-					};
-					var pos3 = {
-						lat: 48.044,
-						lng: -1.750
-					};
-					var pos4 = {
-						lat: 48.045,
-						lng: -1.743
-					};
-					var map = new google.maps.Map(document.getElementById('minimap'), {
-						zoom: 14,
-						center: uluru
-					});
-					var marker = new google.maps.Marker({
-						position: uluru,
-						map: map
-					});
-					var marker = new google.maps.Marker({
-						position: pos2,
-						map: map
-					});
-					var marker = new google.maps.Marker({
-						position: pos3,
-						map: map
-					});
-					var marker = new google.maps.Marker({
-						position: pos4,
-						map: map
-					});
-				}
-			</script>
-			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxbvP2vNfL2nBrOWaRBAZNIB49DgofKc4&callback=initMap">
-			</script>
-		</div>
 
-		<div class="paragraph1">
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-				dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-		</div>
-	
+
+	<div class="paragraph1">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+			dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+
 
 	<script>
 		$(document).ready(function() {
