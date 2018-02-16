@@ -12,9 +12,11 @@ body {
   text-align: center;
   text-decoration: none;
   color: white;
-
 }
 
+nav{
+  display: inline-block;
+}
 .topbar {
   background-color: rgb(242, 48, 30);
   height: 61px;
@@ -57,6 +59,12 @@ form {
   text-align: center;
   cursor: pointer;
 }
+input {
+  border-radius: 4px;
+  padding: 4px 6px;
+  font-family: Verdana!important;
+
+}
 
 .sidebar > ul > li > a { /* liens sidebar */
   color: black;
@@ -79,7 +87,31 @@ form {
   background-color: rgb(230, 231, 59);
   border: 1px solid rgb(230, 231, 59);
   border-radius: 40px;
-  padding: 5px;
+  padding: 10px;
   text-align: center;
   cursor: pointer;
+}
+.lien-connex{
+  background-color: rgb(230, 231, 59);
+  border: 1px solid rgb(230, 231, 59);
+  border-radius: 40px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+}
+.caroussel-title {
+
+}
+
+.caroussel-container {
+  padding: 0 30px;
+  width: calc(100% - 500px);
+  position: relative;
+  left: 250px;
+  top: -200px;
 }
