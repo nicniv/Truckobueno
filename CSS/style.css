@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  background-image: url("../image/fond.jpeg");
+  background-image: url("../image/fond2.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -114,4 +114,11 @@ input {
   position: relative;
   left: 250px;
   top: -200px;
+}
+
+.paragraph1 {
+  font-family: Verdana;
+  text-align: center;
+  margin-right: 10px;
+  position: relative;
 }
