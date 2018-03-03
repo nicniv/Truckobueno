@@ -34,12 +34,10 @@ nav{
 .menu-droite { /* volume + commande + icone caddie */
   float: right;
 }
-.commande{
-}
+
 .iconcomm { /* icone caddie position */
-  position: relative;
-  top: 15px;
   width: 40px;
+  color: black;
 }
 
 .iconspeaker {
@@ -83,6 +81,7 @@ input {
   position: relative;
   margin-left: 50px;
   margin-top: 30px;
+  display: inline-block;
 }
 
 .paragraph1{
@@ -95,6 +94,7 @@ input {
   padding: 10px;
   text-align: center;
   cursor: pointer;
+  color: black;
 }
 .lien-connex{
   background-color: rgb(218, 211, 39);
@@ -103,6 +103,16 @@ input {
   padding: 10px;
   text-align: center;
   cursor: pointer;
+  color: black;
+}
+.commande{
+  background-color: rgb(218, 211, 39);
+  border: 1px solid rgb(218, 211, 39);
+  border-radius: 40px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  color: black!important;
 }
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
@@ -127,8 +137,12 @@ input {
 .paragraph1 {
   font-family: Verdana;
   text-align: center;
-  margin-right: 10px;
+  margin-left:  auto;
+  margin-right: auto;
   position: relative;
+  max-width: 750px;
+  margin-top: -300px;
+  font-size: 20px;
 }
 
 h1
@@ -159,6 +173,40 @@ h1
 .grandemap {
   margin-left: auto;
   margin-right: auto;
-  margin-top: -150px;
   max-width: 750px;
+}
+
+.grandemap > #map {
+  width: 100%;
+  height: 750px;
+}
+
+.articles {
+  margin-top: -475px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Verdana;
+}
+.article img {
+  max-width: 600px;
+}
+.aliments{
+  max-width: 1006px;
+  margin-left: 300px;
+  margin-top: -500px;
+}
+.info {
+  max-width: 750px;
+  margin-left: 600px;
+  margin-top: -400px;
+}
+
+.horaires {
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -275px;
+  font-family: Verdana;
+  font-size: 30px;
 }
