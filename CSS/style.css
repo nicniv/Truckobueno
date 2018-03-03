@@ -13,7 +13,9 @@ body {
   text-decoration: none;
   color: white;
 }
-
+.title > a {
+  text-decoration: none;
+}
 nav{
   display: inline-block;
 }
@@ -71,6 +73,7 @@ input {
 .sidebar > ul > li > a { /* liens sidebar */
   color: black;
   font-size: 16px;
+  text-decoration: none;
 }
 
 .basindex{
@@ -142,4 +145,20 @@ h1
   text-align:center;
   display:block;
   margin:16px;
+  text-decoration:none;
+}
+
+.collab{
+  font-family: Verdana;
+  max-width: 750px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: -500px;
+}
+
+.grandemap {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -150px;
+  max-width: 750px;
 }

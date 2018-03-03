@@ -20,14 +20,15 @@
 		</div>
 		<div class="connexioninsc">
 			<!-- input field inscription icone + input field -->
-			<a class="lieninscription" href="inscription.html"><img src="../image/inscription.png">S'inscrire</a>
+			<a href="inscription.html"><img class="iconinsc" src="../image/inscription.png">S'inscrire</a>
 		</div>
 		<div class="connexionconnex">
 			<!-- input field connexion icone + input field -->
-			<a class="lien-connex" href="moncompte.html"><img class="iconconnex" src="../image/connexion.png">Se connecter</a>
-			<input type="text" name="email" placeholder="email">
-			<input type="password" name="mdp" placeholder="mot de passe">
-			<input type="submit" value="Valider">
+			<a href="moncompte.html"><img class="iconconnex" src="../image/connexion.png">Se connecter</a>
+			<form>
+				<input type="text" name="email" placeholder="email">
+				<input type="password" name="mdp" placeholder="mot de passe">
+				<input type="submit" value="Valider">
 			</form>
 		</div>
 		<div class="menu-droite">
@@ -63,8 +64,8 @@
 		</div>
 	</nav>
 	<section>
-		<div class="grandemap">
-			<div id="map" style="width: 1000px; height: 800px">
+		<div class="minimap">
+			<div id="minimap" style="width:200px;height:200px">
 			</div>
 			<script>
 				function initMap() {
@@ -84,8 +85,8 @@
 						lat: 48.045,
 						lng: -1.743
 					};
-					var map = new google.maps.Map(document.getElementById('map'), {
-						zoom: 15,
+					var map = new google.maps.Map(document.getElementById('minimap'), {
+						zoom: 14,
 						center: uluru
 					});
 					var marker = new google.maps.Marker({
@@ -106,12 +107,28 @@
 					});
 				}
 			</script>
-			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAhM7nor4_Py1uYMa6NDzydwnekR2GHSf0&callback=initMap">
+			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxbvP2vNfL2nBrOWaRBAZNIB49DgofKc4&callback=initMap">
 			</script>
-
 		</div>
-
+		<div class="hellfest">
+			<a href="http://www.hellfest.fr/"><img src="/image/hellfest.jpg" alt="image de la foule helfest"></a>
+			<p>Le Hellfest, également appelé Hellfest Summer Open Air, est un festival de musique français spécialisé dans les musiques extrêmes, annuellement organisé au mois de juin à Clisson en Loire-Atlantique. Sa forte fréquentation le fait figurer parmi les
+				plus importants festivals de musique français. Il est aussi l'un des plus grands festivals de metal en Europe et le premier en France.</p>
+		</div>
+		<div class="lestrans">
+			<a href="https://www.lestrans.com/"><img src="/image/vc.jpg" alt="affiche trans musicales"></a>
+			<p>Les Rencontres trans musicales de Rennes sont un festival international de musiques actuelles qui se tient tous les ans début décembre à Rennes et qui s'étire sur 3 à 5 jours suivant les années. En 2012, le festival a rassemblé plus de 60 000 personnes
+				et a comptabilisé environ 32 000 entrées payantes1.</p>
+		</div>
+		<div class="viellec">
+			<a href="http://www.vieillescharrues.asso.fr/2018/"><img src="/image/vclogo.png" alt="logo vielle charrues"></a>
+			<p>Le festival des Vieilles Charrues (Gouel an Erer Kozh en breton) est un festival de musique accueillant des artistes de divers horizons. Ce festival annuel dure quatre jours et débute à la mi-juillet dans la commune de Carhaix-Plouguer, dans le Centre
+				Finistère, en Bretagne. Il a été créé en 1992 dans la commune voisine de Landeleau et a pour but de mélanger les genres et être accessible à tout public. Il est rapidement devenu le plus grand festival de musique français pour ce qui est de la fréquentation1,
+				entraînant un public attiré par l'affiche éclectique et l'esprit festif et convivial. Le record de fréquentation date de 2017, avec 280 000 festivaliers sur quatre jours, dont 222 000 entrées payantes et 6 800 bénévoles.</p>
+		</div>
 	</section>
+
+
 </body>
 
 </html>
