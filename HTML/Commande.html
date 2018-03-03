@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Truck O Bueno - Accueil</title>
+	<title>Truck O Bueno - Ma commande</title>
 	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="../CSS/style.css" rel="stylesheet">
@@ -23,11 +23,11 @@
 		</div>
 		<div class="connexioninsc">
 			<!-- input field inscription icone + input field -->
-			<a href="inscription.html"><img class="iconinsc" src="../image/inscription.png">S'inscrire</a>
+			<a class="lieninscription" href="inscription.html"><img src="../image/inscription.png">S'inscrire</a>
 		</div>
 		<div class="connexionconnex">
 			<!-- input field connexion icone + input field -->
-			<a href="moncompte.html"><img class="iconconnex" src="../image/connexion.png">Se connecter</a>
+			<a class="lien-connex" href="moncompte.html"><img class="iconconnex" src="../image/connexion.png">Se connecter</a>
 			<form>
 				<input type="text" name="email" placeholder="email">
 				<input type="password" name="mdp" placeholder="mot de passe">
@@ -40,11 +40,11 @@
 					<source src="../musique/Lhymne.mp3">
 					<source src="../musique/Lesvoixbasques.mp3">
 					<source src="../musique/Oleole.mp3">
-					<img class="iconspeaker" src="../image/speaker.png" height="20px" width="20px" alt="icon haut parleur">
+				<img class="iconspeaker" src="../image/speaker.png" height="20px" width="20px" alt="icon haut parleur">
 				</audio>
       </span>
 			<span class="commande">
-				<a href="Commande.html" class="iconcomm">Ma commande <img src="../image/shoppingcart.png" alt="icon d'un caddie"></a>
+			<a href="Commande.html" class="iconcomm">Ma commande <img src="../image/shoppingcart.png" alt="icon d'un caddie"></a>
 			</span>
 		</div>
 	</header>
@@ -110,40 +110,37 @@
 			<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxbvP2vNfL2nBrOWaRBAZNIB49DgofKc4&callback=initMap">
 			</script>
 		</div>
-		<h3>Votre commande</h3>
-		<div class="commande_artc">
-			<div class="com1">
-				<img src="../image/empanadas1.png" alt="image empanadas">
-				<!--Article 1-->
-				<p>Article 1</p>
-				<!--Prix -->
-				<p>5€</p>
-			</div>
-			<div class="comm2">
-				<img src="../image/empanadas2.png" alt=" image empanadas">
 
-				<!--Article 2-->
-				<p>Article 2</p>
-				<!--Prix -->
+		<div class="commande_articles">
+			<h3 class=commande_titre> Votre commande</h3>
+
+			<div class="comm1">
+				<img src="../image/empanadas1.png" alt="image empanadas">
+				<p>Article 1</p>
 				<p>5€</p>
 			</div>
+
+			<div class="comm2">
+				<img src="../image/empanadas2.png" alt="image empanadas">
+				<p>Article 2</p>
+				<p>5€</p>
+			</div>
+
 			<div class="comm3">
 				<img src="../image/empanadas3.png" alt="image empanadas">
-
-				<!--Article 3-->
 				<p>article 3</p>
-				<!--Prix -->
 				<p>5€</p>
 			</div>
+
 			<div class="total">
 				<img src="image/shopping%20cart.png">
 				<p>Total : 15€</p>
 			</div>
 
 		</div>
+
 		<div class="payer">
 			<input type="image" src="/image/Payer.png" />
-
 		</div>
 	</section>
 </body>
