@@ -198,8 +198,9 @@ h1
 }
 .info {
   max-width: 750px;
-  margin-left: 600px;
-  margin-top: -400px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -450px;
 }
 
 .horaires {
@@ -211,9 +212,23 @@ h1
   font-size: 30px;
 }
 
+.commande_articles h3 {
+  font-size: 50px;
+  color: rgb(219, 61, 33)!important;
+
+}
 .commande_articles {
  text-align: center;
  margin-top: -475px;
-  /* margin-left: auto;
-  margin-right: auto; */
+ margin-left: auto;
+ margin-right: auto;
+ font-family: Verdana;
+ font-size: 30px;
+}
+.commande_articles img {
+  max-width: 400px;
+}
+
+.total {
+  font-size: 40px;
 }
