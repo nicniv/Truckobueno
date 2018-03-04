@@ -1,10 +1,41 @@
+<?php
+try {
+	$bdd = new PDO('mysql: host=localhost; dbname=truckobueno; charset=utf8', 'root', '');
+}
+catch (PDOException $e) {
+	die('Erreur : ' . $e->getMessage());
+}
+$bdd->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+if (!empty($_POST)) {
+	if ($_POST['mot_de_passe'] !== $_POST['confirme_mot_de_passe']) {
+		echo "Les mots de passes doivent être identiques.";
+	}
+	else {
+		$sql = "INSERT INTO user VALUES(null, '{$_POST['nom']}', '{$_POST['prenom']}', '{$_POST['date_de_naissance']}', '{$_POST['ville']}', '{$_POST['email']}', '{$_POST['mot_de_passe']}')";
+
+		try {
+			$bdd->exec($sql);
+		} catch (PDOException $e) {
+			die("Erreur dans la base de données : " . $e->getMessage());
+		}
+
+		echo "Inscription réussie.";
+	}
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 
 <head>
-	<title>Truck O Bueno - Accueil</title>
+	<title>Truck O Bueno - Inscription</title>
 	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="../CSS/style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -20,11 +51,11 @@
 		</div>
 		<div class="connexioninsc">
 			<!-- input field inscription icone + input field -->
-			<a href="inscription.html"><img class="iconinsc" src="../image/inscription.png">S'inscrire</a>
+			<a class="lieninscription" href="inscription.php"><img src="../image/inscription.png">S'inscrire</a>
 		</div>
 		<div class="connexionconnex">
 			<!-- input field connexion icone + input field -->
-			<a href="moncompte.html"><img class="iconconnex" src="../image/connexion.png">Se connecter</a>
+			<a class="lien-connex" href="moncompte.php"><img class="iconconnex" src="../image/connexion.png">Se connecter</a>
 			<form>
 				<input type="text" name="email" placeholder="email">
 				<input type="password" name="mdp" placeholder="mot de passe">
@@ -42,24 +73,24 @@
             </span>
 			<span class="commande">
 				<span>Ma commande</span>
-			<a href="Commande.html" class="iconcomm">
+			<a href="Commande.php" class="iconcomm">
 					<img src="../image/shoppingcart.png" alt="icon d'un caddie">
 				</a>
 			</span>
 		</div>
 	</header>
 	<div class="title">
-	<a href="index.html">
+	<a href="index.php">
 			<h1>Truck 'O' Bueno</h1></a>
 	</div>
 	<nav>
 		<div class="sidebar">
 			<!-- liens vers autres pages -->
 			<ul>
-				<li> <a href="Evenements.html" class="lien">Evenements à venir</a> </li>
-				<li> <a href="Menu.html" class="lien">Notre carte</a> </li>
-				<li> <a href="Map.html" class="lien">Nous trouver</a> </li>
-				<li> <a href="Collaborateurs.html" class="lien">Nos collaborateurs</a></li>
+				<li> <a href="Evenements.php" class="lien">Evenements à venir</a> </li>
+				<li> <a href="Menu.php" class="lien">Notre carte</a> </li>
+				<li> <a href="Map.php" class="lien">Nous trouver</a> </li>
+				<li> <a href="Collaborateurs.php" class="lien">Nos collaborateurs</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -98,31 +129,44 @@
                 <script async defer
                         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAxbvP2vNfL2nBrOWaRBAZNIB49DgofKc4&callback=initMap">
                 </script></div>
-            <div class="info">
-                <ul>
-                    <li><p>Nom</p><form><input type="text" name="nom"></form>
-                    </li>
-                    <li><p>Prenom</p><form><input type="texte" name="prenom"></form></li>
-                    <li><p>Date de naissance</p><form><input type="date" name="date de naissance"></form></li>
-                    <li><p>Ville</p><form><input type="text" name="ville"></form></li>
-                    <li><p>Email</p><form><input type="text" name="email"></form></li>
-                    <li><p>Mot de passe</p><form><input type=password name="mot de passe"></form></li>
-                    <li><p>Confirmer le mot de passe</p><form><input type=password name="confirme mot de passe"></form></li>
-
-                </ul>
-
-            </div>
+								<div class="info">
+									<form action="" method="post">
+										<ul>
+											<li>
+												<p>Nom</p>
+												<input type="text" name="nom" required>
+											</li>
+											<li>
+												<p>Prenom</p>
+												<input type="texte" name="prenom" required>
+											</li>
+											<li>
+												<p>Date de naissance</p>
+												<input type="date" name="date_de_naissance" required>
+											</li>
+											<li>
+												<p>Ville</p>
+												<input type="text" name="ville" required>
+											</li>
+											<li>
+												<p>Email</p>
+												<input type="text" name="email" required>
+											</li>
+											<li>
+												<p>Mot de passe</p>
+												<input type="password" name="mot_de_passe" required>
+											</li>
+											<li>
+												<p>Confirmer le mot de passe</p>
+												<input type="password" name="confirme_mot_de_passe" required>
+											</li>
+											<li>
+												<br><input type="submit" value="Valider">
+											</li>
+										</ul>
+									</form>
+								</div>
 
         </section>
-				<!-- Liaison base de donnees -->
-				<?php
-				try {
-					$bdd = new PDO('mysql: host=localhost; dbname=truckobueno; charset=utf8', 'root', '');
-				}
-				catch (PDOException $e) {
-					die('Erreur : ' . $e->getMessage());
-				}
-				$bdd ->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-				?>
     </body>
 </html>

@@ -4,7 +4,10 @@
 <head>
 	<title>Truck O Bueno - Accueil</title>
 	<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link href="../CSS/style.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -20,11 +23,11 @@
 		</div>
 		<div class="connexioninsc">
 			<!-- input field inscription icone + input field -->
-			<a href="inscription.html"><img class="iconinsc" src="../image/inscription.png">S'inscrire</a>
+			<a class="lieninscription" href="inscription.html"><img src="../image/inscription.png">S'inscrire</a>
 		</div>
 		<div class="connexionconnex">
 			<!-- input field connexion icone + input field -->
-			<a href="moncompte.html"><img class="iconconnex" src="../image/connexion.png">Se connecter</a>
+			<a class="lien-connex" href="moncompte.html"><img class="iconconnex" src="../image/connexion.png">Se connecter</a>
 			<form>
 				<input type="text" name="email" placeholder="email">
 				<input type="password" name="mdp" placeholder="mot de passe">
@@ -42,24 +45,24 @@
             </span>
 			<span class="commande">
 				<span>Ma commande</span>
-			<a href="Commande.html" class="iconcomm">
+			<a href="Commande.php" class="iconcomm">
 					<img src="../image/shoppingcart.png" alt ="icon d'un caddie">
 				</a>
 			</span>
 		</div>
 	</header>
 	<div class="title">
-	<a href="index.html">
+	<a href="index.php">
 			<h1>Truck 'O' Bueno</h1></a>
 	</div>
 	<nav>
 		<div class="sidebar">
 			<!-- liens vers autres pages -->
 			<ul>
-				<li> <a href="Evenements.html" class="lien">Evenements à venir</a> </li>
-				<li> <a href="Menu.html" class="lien">Notre carte</a> </li>
-				<li> <a href="Map.html" class="lien">Nous trouver</a> </li>
-				<li> <a href="Collaborateurs.html" class="lien">Nos collaborateurs</a></li>
+				<li> <a href="Evenements.php" class="lien">Evenements à venir</a> </li>
+				<li> <a href="Menu.php" class="lien">Notre carte</a> </li>
+				<li> <a href="Map.php" class="lien">Nous trouver</a> </li>
+				<li> <a href="Collaborateurs.php" class="lien">Nos collaborateurs</a></li>
 			</ul>
 		</div>
 	</nav>
@@ -120,16 +123,14 @@
                 <div class="total">
                     <img src="image/shopping%20cart.png">
                     <p>Total :  15€</p>
-                </div>             
+                </div>
 
-            </div>  
+            </div>
             <div class="payer">
-                <input type="image" src="/image/Payer.png"/>            
+                <input type="image" src="/image/Payer.png"/>
 
             </div>
         </section>
     </body>
 
 </html>
-
-
